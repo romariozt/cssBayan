@@ -49,7 +49,7 @@ details summary {
   list-style: none;
   color: blue;
 }
-details summary:hover {
+details summary:hover{
   color: black;
 }
 details img {
@@ -57,8 +57,7 @@ details img {
   margin: 0 auto;
   padding: 1em;
   cursor: pointer;
-  width: 400px;
-
+  width: 500px;
 }
 details summary:after {
   content: "+";
@@ -81,14 +80,22 @@ details summary {
 }
 /* ***************************** */
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1024px) {
+  section {
+    width: 80%;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
   details img {
-    width: 300px;
+    width: 450px;
+  }
+  details summary {
+    font-size: 1rem;
   }
 }
-
 /* --------------------------------- */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
   section {
     width: 80%;
   }
@@ -96,9 +103,54 @@ details summary {
     font-size: 1.5rem;
   }
   details img {
-    width: 150px;
+    width: 350px;
   }
   details summary {
     font-size: 1rem;
+  }
+}
+/* --------------------------------- */
+@media screen and (max-width: 425px) {
+  section {
+    width: 80%;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  details img {
+    width: 230px;
+  }
+  details summary {
+    font-size: 1rem;
+  }
+}
+/* --------------------------------- */
+@media screen and (max-width: 375px) {
+  section {
+    width: 80%;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+  details img {
+    width: 200px;
+  }
+  details summary {
+    font-size: 1rem;
+  }
+}
+/* --------------------------------- */
+@media screen and (max-width: 320px) {
+  section {
+    width: 80%;
+  }
+  h1 {
+    font-size: 1.1rem;
+  }
+  details img {
+    width: 180px;
+  }
+  details summary {
+    font-size: 0.8rem;
   }
 }
